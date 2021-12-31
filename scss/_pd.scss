@@ -1,0 +1,113 @@
+@import 'global';
+
+body.product-detail {
+    .one {
+        background: #020202;
+        min-height: 85vh;
+        .product-bottom-min {
+            width: 24%;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+    
+            &:hover {
+                box-shadow: #1a51e2 0px 1px 4px, #1a51e2 0px 0px 0px 3px; 
+            }
+        }
+    
+        .product-bottom-right {
+            background: transparent;
+    
+            h2 {
+                color: $Orange;
+                font-weight: bold!important;
+            }
+    
+            h1 {
+                color: $white;
+                font-weight: bold!important;
+                line-height: 1;
+            }
+            .price-product {
+                h3, p {
+                    color: $Orange!important;
+                    font-weight: bold;
+                }
+            }
+    
+        }
+    
+        .form-check {
+            i {
+                position: relative;
+                display: inline-block;
+                transition: all .2s ease-in-out;
+                .tooltips {
+                    visibility: hidden;
+                    width: 150px;
+                    background: white;
+                    opacity: .8;
+                    color: $softDark;
+                    position: absolute;
+                    bottom: -55px;
+                    left: -150px;
+                    z-index: 1;
+                    padding: .55rem;
+                    text-align: start;
+                    border-radius: 2px;
+                    transition: all .2s ease-in-out;
+                    display: none;
+                }
+                &:hover {
+                    .tooltips {
+                        visibility: visible;
+                        transition: all .2s ease-in-out;
+                        display: block;
+    
+                    }
+                }
+
+                &:focus {
+                    visibility: visible;
+                    display: block;
+                }
+            }
+            
+        }
+    
+
+    }
+    
+    
+    
+    h2.product-h2 {
+        color: $softDark;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        padding: 1rem 0rem;
+    }
+    
+    
+    table {
+        td {
+            font-weight: 600;
+            padding: .8rem .6rem;
+            cursor: pointer;
+            i.bi-check-lg {
+                color: #1eea62;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+    .product-mini-in {
+        padding: .3rem;
+        .product-mini-in-img {
+            padding: .3rem;
+        }
+
+    }
+
+}

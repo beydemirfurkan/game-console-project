@@ -1,0 +1,353 @@
+@import 'global';
+
+body.shop-page {
+  .my-account {
+    padding-top: 5rem!important;
+    padding-bottom: 4rem!important;
+  }
+}
+
+.my-account {
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+  background: #f8f8f8;
+  min-height: 700px;
+
+  .my-account-sidebar {
+    background: #ffffff;
+
+    .sidebar-title {
+      background: #f2f2f2;
+      padding: 2rem;
+      text-align: start;
+
+      h2 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: #060606;
+      }
+    }
+    .sidebar-menu {
+      padding-left: 2rem;
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        &.active {
+          a {
+            font-weight: 700;
+            color: #ff8105;
+            i {
+              font-weight: 700;
+              color: #ff8105;
+            }
+          }
+        }
+      }
+      a {
+        font-weight: 600;
+        font-size: 0.8rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: #ff8105;
+        }
+        img {
+          margin-right: 1rem;
+        }
+
+        i {
+          margin-right: 1rem;
+          font-size: 1.25rem;
+          color: #060606;
+        }
+      }
+    }
+  }
+
+  .my-account-content {
+    background: #ffffff;
+    padding-top: 3rem;
+
+    .content-title {
+      margin-bottom: 2rem;
+      margin-left: 2.2rem;
+      
+      h2 {
+        color: #060606;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+    }
+
+    .account-table-wrapper {
+      table {
+        .pl-5 {
+          padding-left: 2rem;
+        }
+        tbody {
+          padding: 2rem 0rem;
+        }
+
+        tr {
+          padding: 2rem 0rem;
+        }
+
+        td {
+          padding: 2rem 0rem;
+          font-size: 0.9rem;
+          font-weight: 500;
+
+          img {
+            padding-right: 0.5rem;
+          }
+
+          .accordion-item {
+            background-color: transparent;
+            border: none;
+
+            .accordion-button {
+              background-color: transparent !important;
+              border-radius: 0;
+              font-size: 0.9rem;
+              padding-left: 0;
+              padding: 0.5rem 0 0 0;
+
+              &:not(.collapsed) {
+                color: #060606;
+              }
+
+              &:focus {
+                z-index: 3;
+                border-color: transparent;
+                outline: 0;
+                box-shadow: none;
+              }
+            }
+
+            .accordion-header {
+              width: 400px;
+            }
+
+            .accordion-body {
+              font-size: 0.7rem;
+              padding: 1rem 0;
+              width: 400px;
+
+              li {
+                padding-bottom: 0.3rem;
+              }
+            }
+          }
+        }
+
+        th {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+      }
+
+      .table-hover {
+        tbody {
+          tr {
+            &:hover {
+              --bs-table-accent-bg: transparent;
+              background: #f2f2f2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.my-account-content .new-addres-form-wrapper .form-select {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #68686b;
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  height: 50px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+
+  .my-account-content .newsletter {
+    margin-left: 1.7rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .my-account-content .newsletter .form-wrapper input {
+    margin-bottom: 0;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+  .accordion-button {
+    background-color: #f2f2f2;
+  }
+  .accordion-button h2 {
+    color: #060606;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    text-transform: capitalize !important;
+  }
+
+  .sidebar-menu {
+    padding-left: 2rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  .sidebar-menu li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .sidebar-menu li.active a {
+    font-weight: 700;
+    color: #ff8105;
+  }
+  .sidebar-menu a {
+    font-weight: 600;
+    font-size: 0.7rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .sidebar-menu a img {
+    margin-right: 1rem;
+  }
+  .sidebar-menu a:hover {
+    color: #ff8105;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: #f2f2f2;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+}
+@media (max-width: 1399.98px) {
+
+  .account-table-wrapper table td .accordion-header {
+    width: 275px;
+  }
+
+  .account-table-wrapper table td .accordion-body {
+    width: 275px;
+  }
+
+  .account-table-wrapper table td .accordion-body li {
+    padding-bottom: 0.6rem;
+  }
+
+  .account-table-wrapper table th {
+    font-size: 0.7rem;
+  }
+
+  .account-table-wrapper table td {
+    font-size: 0.8rem;
+  }
+
+  .account-table-wrapper table td .accordion-button {
+    font-size: 0.8rem;
+  }
+
+  .account-table-wrapper table td .accordion-header {
+    width: 230px;
+  }
+
+  .account-table-wrapper table td .accordion-body {
+    width: 228px;
+  }
+
+}
+
+// == Address ==
+
+.my-address-box {
+  margin: .5rem 0rem;
+  border: 1px solid #c2c2c2;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+
+  .toltips-work {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    .my-address-tips {
+      position: relative;
+  
+      .my-address-tips-inner {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        border-radius: 15px;
+        visibility: hidden;
+        background: whitesmoke;
+        color: $softDark;
+        width: 200px;
+        padding: 5px 15px;
+        p {
+          font-weight: 600;
+          margin: 0;
+          padding: 2px;
+        }
+      }
+    }
+  
+    &:hover {
+      .my-address-tips-inner {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media(max-width:1366px) {
+  .my-address-tips-inner  {
+    position: absolute;
+    top: 10px!important;
+    left: -170px!important;
+  }
+}
+
+
+@media (min-width:576px) {
+  .newsletter {
+    padding: .5rem 2.2rem;
+  }  
+}
+
+// == END Address ==
+
+@media(min-width:1199.98px) and (max-width:1258px) {
+  .sidebar-menu {
+    li {
+      padding-right: 10px;
+      font-size: .8rem;
+      a {
+        font-size: .8rem;
+      }
+    }
+  }
+}

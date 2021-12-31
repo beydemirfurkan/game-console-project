@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wolf Controllers</title>
+    <link rel="icon" href="img/wolfcontroller2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        .edit-input:checked[type=checkbox] {
+            background-image: url(img/pencil-square.svg) !important;
+        }
+
+        .edit-input:checked {
+            background-color: transparent;
+            border-color: #fff;
+        }
+    </style>
+
+</head>
+
+<body class="shop-page">
+    <!-- Main Content -->
+    <main class="content">
+        
+        
+        <div class="logo-complete px-3 px-md-5 d-md-flex flex-wrap justify-content-between" style="background: #0b1733;">
+            <div class="text-center py-3">
+                <a href="index.html" class="text-center">
+                     <img src="img/log.png" width="150">
+                </a>
+            </div>
+            
+            <div class="shop-bar py-3 d-flex justify-content-center align-items-center">
+                <div class="rounded-circle circle-seppet text-white dark-blue">
+                    <i class="bi bi-cart"></i>
+                </div>
+                <div class="line-seppet"> </div>
+
+                <div class="rounded-circle circle-seppet text-white dark-blue">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="line-seppet"> </div>
+
+                <div class="rounded-circle circle-seppet btn p-0"  style="border: 1px solid #fff;">
+                    <i class="bi bi-currency-dollar text-white "></i>
+                </div>
+                <div class="line-seppet"> </div>
+
+                <div class="rounded-circle circle-seppet btn p-0"  style="border: 1px solid #fff;">
+                    <i class="bi bi-check-lg text-white "></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- My Orders -->
+        <section class="my-account">
+            <div class="container-fluid px-md-5">
+                <div class="row px-xxl-5">
+                    <div class="col-xl-7">
+                        <div class="my-account-content p-0 m-0">
+                            <div class="pb-5 rounded-3 order-detail1 px-5 shadow">
+
+                                <h5 class="text-dark pt-4 pb-1 pt-lg-5 fw-bold pb-lg-4 fs-5"> KAYITLI ADRESLERİM </h5>
+                                <div class="d-flex justify-content-between flex-wrap mb-5">
+                                    <div class="col-lg-6 px-2">
+                                        <div class="my-address">
+                                            <div class="my-address-title">
+                                                <h5>Ev Adresim</h5>
+                                            </div>
+                                            <div class="my-address-body">
+                                                <p>Ismail Ceyhan</p>
+                                                <p>Marcaspio LTD</p>
+                                                <p>Büyükdere Cad. No: 62 Kat: 5</p>
+                                                <p>Şişli, 34330</p>
+                                                <p>Turkiye</p>
+                                                <p>Telefonnummer: +95341249423</p>
+                                                <p class="text-center fw-bold">...</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input edit-input fs-5 shadow-none" type="checkbox"
+                                                            value="" id="flexCheckChecked" checked>
+                                                    </div>
+                                                    <div><img src="img/address-icon.png" alt="" class="img-fluid"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 rounded-3 px-2">
+                                        <div class="my-address">
+                                            <div class="my-address-title">
+                                                <h5>İş Adresim</h5>
+                                            </div>
+                                            <div class="my-address-body">
+                                                <p>Ismail Ceyhan</p>
+                                                <p>Marcaspio LTD</p>
+                                                <p>Büyükdere Cad. No: 62 Kat: 5</p>
+                                                <p>Şişli, 34330</p>
+                                                <p>Turkiye</p>
+                                                <p>Telefonnummer: +95341249423</p>
+                                                <p class="text-center fw-bold">...</p>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input fs-5 edit-input" type="checkbox"
+                                                            value="" id="flexCheckChecked">
+                                                    </div>
+                                                    <div><img src="img/address-icon.png" alt="" class="img-fluid"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item shadow-none">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button py-4 fw-bold fs-5" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                YENİ ADRES EKLE
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+
+                                                <div class="bg-white pb-1 pb-lg-5 mb-2 pt-4 pt-lg-5 px-3 px-md-5">
+
+
+
+                                                    <div class="mb-3">
+                                                        <h5 class="text-dark mb-3">Lieferadresse</h5>
+                                                        <div class="my-3">
+                                                            <select class="form-select border-0"
+                                                                style="border-bottom: 1px solid #c2c2c2!important; border-radius: 0px;">
+                                                                <option selected>Land*</option>
+                                                                <option value="Afganistan">Afghanistan</option>
+                                                                <option value="Albania">Albania</option>
+                                                                <option value="Algeria">Algeria</option>
+                                                                <option value="American Samoa">American Samoa</option>
+                                                                <option value="Andorra">Andorra</option>
+                                                                <option value="Angola">Angola</option>
+                                                                <option value="Anguilla">Anguilla</option>
+                                                                <option value="Antigua & Barbuda">Antigua & Barbuda
+                                                                </option>
+                                                                <option value="Argentina">Argentina</option>
+                                                                <option value="Armenia">Armenia</option>
+                                                                <option value="Aruba">Aruba</option>
+                                                                <option value="Australia">Australia</option>
+                                                                <option value="Austria">Austria</option>
+                                                                <option value="Azerbaijan">Azerbaijan</option>
+                                                                <option value="Bahamas">Bahamas</option>
+                                                                <option value="Bahrain">Bahrain</option>
+                                                                <option value="Bangladesh">Bangladesh</option>
+                                                                <option value="Barbados">Barbados</option>
+                                                                <option value="Belarus">Belarus</option>
+                                                                <option value="Belgium">Belgium</option>
+                                                                <option value="Belize">Belize</option>
+                                                                <option value="Benin">Benin</option>
+                                                                <option value="Bermuda">Bermuda</option>
+                                                                <option value="Bhutan">Bhutan</option>
+                                                                <option value="Bolivia">Bolivia</option>
+                                                                <option value="Bonaire">Bonaire</option>
+                                                                <option value="Bosnia & Herzegovina">Bosnia &
+                                                                    Herzegovina</option>
+                                                                <option value="Botswana">Botswana</option>
+                                                                <option value="Brazil">Brazil</option>
+                                                                <option value="British Indian Ocean Ter">British Indian
+                                                                    Ocean Ter</option>
+                                                                <option value="Brunei">Brunei</option>
+                                                                <option value="Bulgaria">Bulgaria</option>
+                                                                <option value="Burkina Faso">Burkina Faso</option>
+                                                                <option value="Burundi">Burundi</option>
+                                                                <option value="Cambodia">Cambodia</option>
+                                                                <option value="Cameroon">Cameroon</option>
+                                                                <option value="Canada">Canada</option>
+                                                                <option value="Canary Islands">Canary Islands</option>
+                                                                <option value="Cape Verde">Cape Verde</option>
+                                                                <option value="Cayman Islands">Cayman Islands</option>
+                                                                <option value="Central African Republic">Central African
+                                                                    Republic</option>
+                                                                <option value="Chad">Chad</option>
+                                                                <option value="Channel Islands">Channel Islands</option>
+                                                                <option value="Chile">Chile</option>
+                                                                <option value="China">China</option>
+                                                                <option value="Christmas Island">Christmas Island
+                                                                </option>
+                                                                <option value="Cocos Island">Cocos Island</option>
+                                                                <option value="Colombia">Colombia</option>
+                                                                <option value="Comoros">Comoros</option>
+                                                                <option value="Congo">Congo</option>
+                                                                <option value="Cook Islands">Cook Islands</option>
+                                                                <option value="Costa Rica">Costa Rica</option>
+                                                                <option value="Cote DIvoire">Cote DIvoire</option>
+                                                                <option value="Croatia">Croatia</option>
+                                                                <option value="Cuba">Cuba</option>
+                                                                <option value="Curaco">Curacao</option>
+                                                                <option value="Cyprus">Cyprus</option>
+                                                                <option value="Czech Republic">Czech Republic</option>
+                                                                <option value="Denmark">Denmark</option>
+                                                                <option value="Djibouti">Djibouti</option>
+                                                                <option value="Dominica">Dominica</option>
+                                                                <option value="Dominican Republic">Dominican Republic
+                                                                </option>
+                                                                <option value="East Timor">East Timor</option>
+                                                                <option value="Ecuador">Ecuador</option>
+                                                                <option value="Egypt">Egypt</option>
+                                                                <option value="El Salvador">El Salvador</option>
+                                                                <option value="Equatorial Guinea">Equatorial Guinea
+                                                                </option>
+                                                                <option value="Eritrea">Eritrea</option>
+                                                                <option value="Estonia">Estonia</option>
+                                                                <option value="Ethiopia">Ethiopia</option>
+                                                                <option value="Falkland Islands">Falkland Islands
+                                                                </option>
+                                                                <option value="Faroe Islands">Faroe Islands</option>
+                                                                <option value="Fiji">Fiji</option>
+                                                                <option value="Finland">Finland</option>
+                                                                <option value="France">France</option>
+                                                                <option value="French Guiana">French Guiana</option>
+                                                                <option value="French Polynesia">French Polynesia
+                                                                </option>
+                                                                <option value="French Southern Ter">French Southern Ter
+                                                                </option>
+                                                                <option value="Gabon">Gabon</option>
+                                                                <option value="Gambia">Gambia</option>
+                                                                <option value="Georgia">Georgia</option>
+                                                                <option value="Germany">Germany</option>
+                                                                <option value="Ghana">Ghana</option>
+                                                                <option value="Gibraltar">Gibraltar</option>
+                                                                <option value="Great Britain">Great Britain</option>
+                                                                <option value="Greece">Greece</option>
+                                                                <option value="Greenland">Greenland</option>
+                                                                <option value="Grenada">Grenada</option>
+                                                                <option value="Guadeloupe">Guadeloupe</option>
+                                                                <option value="Guam">Guam</option>
+                                                                <option value="Guatemala">Guatemala</option>
+                                                                <option value="Guinea">Guinea</option>
+                                                                <option value="Guyana">Guyana</option>
+                                                                <option value="Haiti">Haiti</option>
+                                                                <option value="Hawaii">Hawaii</option>
+                                                                <option value="Honduras">Honduras</option>
+                                                                <option value="Hong Kong">Hong Kong</option>
+                                                                <option value="Hungary">Hungary</option>
+                                                                <option value="Iceland">Iceland</option>
+                                                                <option value="Indonesia">Indonesia</option>
+                                                                <option value="India">India</option>
+                                                                <option value="Iran">Iran</option>
+                                                                <option value="Iraq">Iraq</option>
+                                                                <option value="Ireland">Ireland</option>
+                                                                <option value="Isle of Man">Isle of Man</option>
+                                                                <option value="Israel">Israel</option>
+                                                                <option value="Italy">Italy</option>
+                                                                <option value="Jamaica">Jamaica</option>
+                                                                <option value="Japan">Japan</option>
+                                                                <option value="Jordan">Jordan</option>
+                                                                <option value="Kazakhstan">Kazakhstan</option>
+                                                                <option value="Kenya">Kenya</option>
+                                                                <option value="Kiribati">Kiribati</option>
+                                                                <option value="Korea North">Korea North</option>
+                                                                <option value="Korea Sout">Korea South</option>
+                                                                <option value="Kuwait">Kuwait</option>
+                                                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                                <option value="Laos">Laos</option>
+                                                                <option value="Latvia">Latvia</option>
+                                                                <option value="Lebanon">Lebanon</option>
+                                                                <option value="Lesotho">Lesotho</option>
+                                                                <option value="Liberia">Liberia</option>
+                                                                <option value="Libya">Libya</option>
+                                                                <option value="Liechtenstein">Liechtenstein</option>
+                                                                <option value="Lithuania">Lithuania</option>
+                                                                <option value="Luxembourg">Luxembourg</option>
+                                                                <option value="Macau">Macau</option>
+                                                                <option value="Macedonia">Macedonia</option>
+                                                                <option value="Madagascar">Madagascar</option>
+                                                                <option value="Malaysia">Malaysia</option>
+                                                                <option value="Malawi">Malawi</option>
+                                                                <option value="Maldives">Maldives</option>
+                                                                <option value="Mali">Mali</option>
+                                                                <option value="Malta">Malta</option>
+                                                                <option value="Marshall Islands">Marshall Islands
+                                                                </option>
+                                                                <option value="Martinique">Martinique</option>
+                                                                <option value="Mauritania">Mauritania</option>
+                                                                <option value="Mauritius">Mauritius</option>
+                                                                <option value="Mayotte">Mayotte</option>
+                                                                <option value="Mexico">Mexico</option>
+                                                                <option value="Midway Islands">Midway Islands</option>
+                                                                <option value="Moldova">Moldova</option>
+                                                                <option value="Monaco">Monaco</option>
+                                                                <option value="Mongolia">Mongolia</option>
+                                                                <option value="Montserrat">Montserrat</option>
+                                                                <option value="Morocco">Morocco</option>
+                                                                <option value="Mozambique">Mozambique</option>
+                                                                <option value="Myanmar">Myanmar</option>
+                                                                <option value="Nambia">Nambia</option>
+                                                                <option value="Nauru">Nauru</option>
+                                                                <option value="Nepal">Nepal</option>
+                                                                <option value="Netherland Antilles">Netherland Antilles
+                                                                </option>
+                                                                <option value="Netherlands">Netherlands (Holland,
+                                                                    Europe)</option>
+                                                                <option value="Nevis">Nevis</option>
+                                                                <option value="New Caledonia">New Caledonia</option>
+                                                                <option value="New Zealand">New Zealand</option>
+                                                                <option value="Nicaragua">Nicaragua</option>
+                                                                <option value="Niger">Niger</option>
+                                                                <option value="Nigeria">Nigeria</option>
+                                                                <option value="Niue">Niue</option>
+                                                                <option value="Norfolk Island">Norfolk Island</option>
+                                                                <option value="Norway">Norway</option>
+                                                                <option value="Oman">Oman</option>
+                                                                <option value="Pakistan">Pakistan</option>
+                                                                <option value="Palau Island">Palau Island</option>
+                                                                <option value="Palestine">Palestine</option>
+                                                                <option value="Panama">Panama</option>
+                                                                <option value="Papua New Guinea">Papua New Guinea
+                                                                </option>
+                                                                <option value="Paraguay">Paraguay</option>
+                                                                <option value="Peru">Peru</option>
+                                                                <option value="Phillipines">Philippines</option>
+                                                                <option value="Pitcairn Island">Pitcairn Island</option>
+                                                                <option value="Poland">Poland</option>
+                                                                <option value="Portugal">Portugal</option>
+                                                                <option value="Puerto Rico">Puerto Rico</option>
+                                                                <option value="Qatar">Qatar</option>
+                                                                <option value="Republic of Montenegro">Republic of
+                                                                    Montenegro</option>
+                                                                <option value="Republic of Serbia">Republic of Serbia
+                                                                </option>
+                                                                <option value="Reunion">Reunion</option>
+                                                                <option value="Romania">Romania</option>
+                                                                <option value="Russia">Russia</option>
+                                                                <option value="Rwanda">Rwanda</option>
+                                                                <option value="St Barthelemy">St Barthelemy</option>
+                                                                <option value="St Eustatius">St Eustatius</option>
+                                                                <option value="St Helena">St Helena</option>
+                                                                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                                                <option value="St Lucia">St Lucia</option>
+                                                                <option value="St Maarten">St Maarten</option>
+                                                                <option value="St Pierre & Miquelon">St Pierre &
+                                                                    Miquelon</option>
+                                                                <option value="St Vincent & Grenadines">St Vincent &
+                                                                    Grenadines</option>
+                                                                <option value="Saipan">Saipan</option>
+                                                                <option value="Samoa">Samoa</option>
+                                                                <option value="Samoa American">Samoa American</option>
+                                                                <option value="San Marino">San Marino</option>
+                                                                <option value="Sao Tome & Principe">Sao Tome & Principe
+                                                                </option>
+                                                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                                                <option value="Senegal">Senegal</option>
+                                                                <option value="Seychelles">Seychelles</option>
+                                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                                <option value="Singapore">Singapore</option>
+                                                                <option value="Slovakia">Slovakia</option>
+                                                                <option value="Slovenia">Slovenia</option>
+                                                                <option value="Solomon Islands">Solomon Islands</option>
+                                                                <option value="Somalia">Somalia</option>
+                                                                <option value="South Africa">South Africa</option>
+                                                                <option value="Spain">Spain</option>
+                                                                <option value="Sri Lanka">Sri Lanka</option>
+                                                                <option value="Sudan">Sudan</option>
+                                                                <option value="Suriname">Suriname</option>
+                                                                <option value="Swaziland">Swaziland</option>
+                                                                <option value="Sweden">Sweden</option>
+                                                                <option value="Switzerland">Switzerland</option>
+                                                                <option value="Syria">Syria</option>
+                                                                <option value="Tahiti">Tahiti</option>
+                                                                <option value="Taiwan">Taiwan</option>
+                                                                <option value="Tajikistan">Tajikistan</option>
+                                                                <option value="Tanzania">Tanzania</option>
+                                                                <option value="Thailand">Thailand</option>
+                                                                <option value="Togo">Togo</option>
+                                                                <option value="Tokelau">Tokelau</option>
+                                                                <option value="Tonga">Tonga</option>
+                                                                <option value="Trinidad & Tobago">Trinidad & Tobago
+                                                                </option>
+                                                                <option value="Tunisia">Tunisia</option>
+                                                                <option value="Turkey">Turkey</option>
+                                                                <option value="Turkmenistan">Turkmenistan</option>
+                                                                <option value="Turks & Caicos Is">Turks & Caicos Is
+                                                                </option>
+                                                                <option value="Tuvalu">Tuvalu</option>
+                                                                <option value="Uganda">Uganda</option>
+                                                                <option value="United Kingdom">United Kingdom</option>
+                                                                <option value="Ukraine">Ukraine</option>
+                                                                <option value="United Arab Erimates">United Arab
+                                                                    Emirates</option>
+                                                                <option value="United States of America">United States
+                                                                    of America</option>
+                                                                <option value="Uraguay">Uruguay</option>
+                                                                <option value="Uzbekistan">Uzbekistan</option>
+                                                                <option value="Vanuatu">Vanuatu</option>
+                                                                <option value="Vatican City State">Vatican City State
+                                                                </option>
+                                                                <option value="Venezuela">Venezuela</option>
+                                                                <option value="Vietnam">Vietnam</option>
+                                                                <option value="Virgin Islands (Brit)">Virgin Islands
+                                                                    (Brit)</option>
+                                                                <option value="Virgin Islands (USA)">Virgin Islands
+                                                                    (USA)</option>
+                                                                <option value="Wake Island">Wake Island</option>
+                                                                <option value="Wallis & Futana Is">Wallis & Futana Is
+                                                                </option>
+                                                                <option value="Yemen">Yemen</option>
+                                                                <option value="Zaire">Zaire</option>
+                                                                <option value="Zambia">Zambia</option>
+                                                                <option value="Zimbabwe">Zimbabwe</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <div class="col-md-6 pe-2 pe-md-3">
+                                                                <div class="form-floating mb-3">
+                                                                    <input type="text" class="form-control"
+                                                                        id="floatingInput" placeholder="Vorname*">
+                                                                    <label for="floatingInput">Vorname*</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 pe-2 pe-md-3">
+                                                                <div class="form-floating mb-3">
+                                                                    <input type="text" class="form-control"
+                                                                        id="floatingInput" placeholder="Nachname*">
+                                                                    <label for="floatingInput">Nachname</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Unternehmensname">
+                                                            <label for="floatingInput">Unternehmensname</label>
+                                                        </div>
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Straße*">
+                                                            <label for="floatingInput">Straße*</label>
+                                                        </div>
+
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Postleitzahl*">
+                                                            <label for="floatingInput">Postleitzahl</label>
+                                                        </div>
+
+
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Telefonnummer*">
+                                                            <label for="floatingInput">Telefonnummer</label>
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <div class="form-check checked-form1">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    Rechnungsadresse ist <span
+                                                                        class="fw-bold">nicht</span> mit Lieferadresse
+                                                                    identisch
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3 checked-form">
+                                                        <h5 class="text-dark mb-3">Rechnungsadresse</h5>
+                                                        <div class="my-3">
+                                                            <select class="form-select border-0"
+                                                                style="border-bottom: 1px solid #c2c2c2!important; border-radius: 0px;">
+                                                                <option selected>Land*</option>
+                                                                <option value="Afganistan">Afghanistan</option>
+                                                                <option value="Albania">Albania</option>
+                                                                <option value="Algeria">Algeria</option>
+                                                                <option value="American Samoa">American Samoa</option>
+                                                                <option value="Andorra">Andorra</option>
+                                                                <option value="Angola">Angola</option>
+                                                                <option value="Anguilla">Anguilla</option>
+                                                                <option value="Antigua & Barbuda">Antigua & Barbuda
+                                                                </option>
+                                                                <option value="Argentina">Argentina</option>
+                                                                <option value="Armenia">Armenia</option>
+                                                                <option value="Aruba">Aruba</option>
+                                                                <option value="Australia">Australia</option>
+                                                                <option value="Austria">Austria</option>
+                                                                <option value="Azerbaijan">Azerbaijan</option>
+                                                                <option value="Bahamas">Bahamas</option>
+                                                                <option value="Bahrain">Bahrain</option>
+                                                                <option value="Bangladesh">Bangladesh</option>
+                                                                <option value="Barbados">Barbados</option>
+                                                                <option value="Belarus">Belarus</option>
+                                                                <option value="Belgium">Belgium</option>
+                                                                <option value="Belize">Belize</option>
+                                                                <option value="Benin">Benin</option>
+                                                                <option value="Bermuda">Bermuda</option>
+                                                                <option value="Bhutan">Bhutan</option>
+                                                                <option value="Bolivia">Bolivia</option>
+                                                                <option value="Bonaire">Bonaire</option>
+                                                                <option value="Bosnia & Herzegovina">Bosnia &
+                                                                    Herzegovina</option>
+                                                                <option value="Botswana">Botswana</option>
+                                                                <option value="Brazil">Brazil</option>
+                                                                <option value="British Indian Ocean Ter">British Indian
+                                                                    Ocean Ter</option>
+                                                                <option value="Brunei">Brunei</option>
+                                                                <option value="Bulgaria">Bulgaria</option>
+                                                                <option value="Burkina Faso">Burkina Faso</option>
+                                                                <option value="Burundi">Burundi</option>
+                                                                <option value="Cambodia">Cambodia</option>
+                                                                <option value="Cameroon">Cameroon</option>
+                                                                <option value="Canada">Canada</option>
+                                                                <option value="Canary Islands">Canary Islands</option>
+                                                                <option value="Cape Verde">Cape Verde</option>
+                                                                <option value="Cayman Islands">Cayman Islands</option>
+                                                                <option value="Central African Republic">Central African
+                                                                    Republic</option>
+                                                                <option value="Chad">Chad</option>
+                                                                <option value="Channel Islands">Channel Islands</option>
+                                                                <option value="Chile">Chile</option>
+                                                                <option value="China">China</option>
+                                                                <option value="Christmas Island">Christmas Island
+                                                                </option>
+                                                                <option value="Cocos Island">Cocos Island</option>
+                                                                <option value="Colombia">Colombia</option>
+                                                                <option value="Comoros">Comoros</option>
+                                                                <option value="Congo">Congo</option>
+                                                                <option value="Cook Islands">Cook Islands</option>
+                                                                <option value="Costa Rica">Costa Rica</option>
+                                                                <option value="Cote DIvoire">Cote DIvoire</option>
+                                                                <option value="Croatia">Croatia</option>
+                                                                <option value="Cuba">Cuba</option>
+                                                                <option value="Curaco">Curacao</option>
+                                                                <option value="Cyprus">Cyprus</option>
+                                                                <option value="Czech Republic">Czech Republic</option>
+                                                                <option value="Denmark">Denmark</option>
+                                                                <option value="Djibouti">Djibouti</option>
+                                                                <option value="Dominica">Dominica</option>
+                                                                <option value="Dominican Republic">Dominican Republic
+                                                                </option>
+                                                                <option value="East Timor">East Timor</option>
+                                                                <option value="Ecuador">Ecuador</option>
+                                                                <option value="Egypt">Egypt</option>
+                                                                <option value="El Salvador">El Salvador</option>
+                                                                <option value="Equatorial Guinea">Equatorial Guinea
+                                                                </option>
+                                                                <option value="Eritrea">Eritrea</option>
+                                                                <option value="Estonia">Estonia</option>
+                                                                <option value="Ethiopia">Ethiopia</option>
+                                                                <option value="Falkland Islands">Falkland Islands
+                                                                </option>
+                                                                <option value="Faroe Islands">Faroe Islands</option>
+                                                                <option value="Fiji">Fiji</option>
+                                                                <option value="Finland">Finland</option>
+                                                                <option value="France">France</option>
+                                                                <option value="French Guiana">French Guiana</option>
+                                                                <option value="French Polynesia">French Polynesia
+                                                                </option>
+                                                                <option value="French Southern Ter">French Southern Ter
+                                                                </option>
+                                                                <option value="Gabon">Gabon</option>
+                                                                <option value="Gambia">Gambia</option>
+                                                                <option value="Georgia">Georgia</option>
+                                                                <option value="Germany">Germany</option>
+                                                                <option value="Ghana">Ghana</option>
+                                                                <option value="Gibraltar">Gibraltar</option>
+                                                                <option value="Great Britain">Great Britain</option>
+                                                                <option value="Greece">Greece</option>
+                                                                <option value="Greenland">Greenland</option>
+                                                                <option value="Grenada">Grenada</option>
+                                                                <option value="Guadeloupe">Guadeloupe</option>
+                                                                <option value="Guam">Guam</option>
+                                                                <option value="Guatemala">Guatemala</option>
+                                                                <option value="Guinea">Guinea</option>
+                                                                <option value="Guyana">Guyana</option>
+                                                                <option value="Haiti">Haiti</option>
+                                                                <option value="Hawaii">Hawaii</option>
+                                                                <option value="Honduras">Honduras</option>
+                                                                <option value="Hong Kong">Hong Kong</option>
+                                                                <option value="Hungary">Hungary</option>
+                                                                <option value="Iceland">Iceland</option>
+                                                                <option value="Indonesia">Indonesia</option>
+                                                                <option value="India">India</option>
+                                                                <option value="Iran">Iran</option>
+                                                                <option value="Iraq">Iraq</option>
+                                                                <option value="Ireland">Ireland</option>
+                                                                <option value="Isle of Man">Isle of Man</option>
+                                                                <option value="Israel">Israel</option>
+                                                                <option value="Italy">Italy</option>
+                                                                <option value="Jamaica">Jamaica</option>
+                                                                <option value="Japan">Japan</option>
+                                                                <option value="Jordan">Jordan</option>
+                                                                <option value="Kazakhstan">Kazakhstan</option>
+                                                                <option value="Kenya">Kenya</option>
+                                                                <option value="Kiribati">Kiribati</option>
+                                                                <option value="Korea North">Korea North</option>
+                                                                <option value="Korea Sout">Korea South</option>
+                                                                <option value="Kuwait">Kuwait</option>
+                                                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                                <option value="Laos">Laos</option>
+                                                                <option value="Latvia">Latvia</option>
+                                                                <option value="Lebanon">Lebanon</option>
+                                                                <option value="Lesotho">Lesotho</option>
+                                                                <option value="Liberia">Liberia</option>
+                                                                <option value="Libya">Libya</option>
+                                                                <option value="Liechtenstein">Liechtenstein</option>
+                                                                <option value="Lithuania">Lithuania</option>
+                                                                <option value="Luxembourg">Luxembourg</option>
+                                                                <option value="Macau">Macau</option>
+                                                                <option value="Macedonia">Macedonia</option>
+                                                                <option value="Madagascar">Madagascar</option>
+                                                                <option value="Malaysia">Malaysia</option>
+                                                                <option value="Malawi">Malawi</option>
+                                                                <option value="Maldives">Maldives</option>
+                                                                <option value="Mali">Mali</option>
+                                                                <option value="Malta">Malta</option>
+                                                                <option value="Marshall Islands">Marshall Islands
+                                                                </option>
+                                                                <option value="Martinique">Martinique</option>
+                                                                <option value="Mauritania">Mauritania</option>
+                                                                <option value="Mauritius">Mauritius</option>
+                                                                <option value="Mayotte">Mayotte</option>
+                                                                <option value="Mexico">Mexico</option>
+                                                                <option value="Midway Islands">Midway Islands</option>
+                                                                <option value="Moldova">Moldova</option>
+                                                                <option value="Monaco">Monaco</option>
+                                                                <option value="Mongolia">Mongolia</option>
+                                                                <option value="Montserrat">Montserrat</option>
+                                                                <option value="Morocco">Morocco</option>
+                                                                <option value="Mozambique">Mozambique</option>
+                                                                <option value="Myanmar">Myanmar</option>
+                                                                <option value="Nambia">Nambia</option>
+                                                                <option value="Nauru">Nauru</option>
+                                                                <option value="Nepal">Nepal</option>
+                                                                <option value="Netherland Antilles">Netherland Antilles
+                                                                </option>
+                                                                <option value="Netherlands">Netherlands (Holland,
+                                                                    Europe)</option>
+                                                                <option value="Nevis">Nevis</option>
+                                                                <option value="New Caledonia">New Caledonia</option>
+                                                                <option value="New Zealand">New Zealand</option>
+                                                                <option value="Nicaragua">Nicaragua</option>
+                                                                <option value="Niger">Niger</option>
+                                                                <option value="Nigeria">Nigeria</option>
+                                                                <option value="Niue">Niue</option>
+                                                                <option value="Norfolk Island">Norfolk Island</option>
+                                                                <option value="Norway">Norway</option>
+                                                                <option value="Oman">Oman</option>
+                                                                <option value="Pakistan">Pakistan</option>
+                                                                <option value="Palau Island">Palau Island</option>
+                                                                <option value="Palestine">Palestine</option>
+                                                                <option value="Panama">Panama</option>
+                                                                <option value="Papua New Guinea">Papua New Guinea
+                                                                </option>
+                                                                <option value="Paraguay">Paraguay</option>
+                                                                <option value="Peru">Peru</option>
+                                                                <option value="Phillipines">Philippines</option>
+                                                                <option value="Pitcairn Island">Pitcairn Island</option>
+                                                                <option value="Poland">Poland</option>
+                                                                <option value="Portugal">Portugal</option>
+                                                                <option value="Puerto Rico">Puerto Rico</option>
+                                                                <option value="Qatar">Qatar</option>
+                                                                <option value="Republic of Montenegro">Republic of
+                                                                    Montenegro</option>
+                                                                <option value="Republic of Serbia">Republic of Serbia
+                                                                </option>
+                                                                <option value="Reunion">Reunion</option>
+                                                                <option value="Romania">Romania</option>
+                                                                <option value="Russia">Russia</option>
+                                                                <option value="Rwanda">Rwanda</option>
+                                                                <option value="St Barthelemy">St Barthelemy</option>
+                                                                <option value="St Eustatius">St Eustatius</option>
+                                                                <option value="St Helena">St Helena</option>
+                                                                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                                                <option value="St Lucia">St Lucia</option>
+                                                                <option value="St Maarten">St Maarten</option>
+                                                                <option value="St Pierre & Miquelon">St Pierre &
+                                                                    Miquelon</option>
+                                                                <option value="St Vincent & Grenadines">St Vincent &
+                                                                    Grenadines</option>
+                                                                <option value="Saipan">Saipan</option>
+                                                                <option value="Samoa">Samoa</option>
+                                                                <option value="Samoa American">Samoa American</option>
+                                                                <option value="San Marino">San Marino</option>
+                                                                <option value="Sao Tome & Principe">Sao Tome & Principe
+                                                                </option>
+                                                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                                                <option value="Senegal">Senegal</option>
+                                                                <option value="Seychelles">Seychelles</option>
+                                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                                <option value="Singapore">Singapore</option>
+                                                                <option value="Slovakia">Slovakia</option>
+                                                                <option value="Slovenia">Slovenia</option>
+                                                                <option value="Solomon Islands">Solomon Islands</option>
+                                                                <option value="Somalia">Somalia</option>
+                                                                <option value="South Africa">South Africa</option>
+                                                                <option value="Spain">Spain</option>
+                                                                <option value="Sri Lanka">Sri Lanka</option>
+                                                                <option value="Sudan">Sudan</option>
+                                                                <option value="Suriname">Suriname</option>
+                                                                <option value="Swaziland">Swaziland</option>
+                                                                <option value="Sweden">Sweden</option>
+                                                                <option value="Switzerland">Switzerland</option>
+                                                                <option value="Syria">Syria</option>
+                                                                <option value="Tahiti">Tahiti</option>
+                                                                <option value="Taiwan">Taiwan</option>
+                                                                <option value="Tajikistan">Tajikistan</option>
+                                                                <option value="Tanzania">Tanzania</option>
+                                                                <option value="Thailand">Thailand</option>
+                                                                <option value="Togo">Togo</option>
+                                                                <option value="Tokelau">Tokelau</option>
+                                                                <option value="Tonga">Tonga</option>
+                                                                <option value="Trinidad & Tobago">Trinidad & Tobago
+                                                                </option>
+                                                                <option value="Tunisia">Tunisia</option>
+                                                                <option value="Turkey">Turkey</option>
+                                                                <option value="Turkmenistan">Turkmenistan</option>
+                                                                <option value="Turks & Caicos Is">Turks & Caicos Is
+                                                                </option>
+                                                                <option value="Tuvalu">Tuvalu</option>
+                                                                <option value="Uganda">Uganda</option>
+                                                                <option value="United Kingdom">United Kingdom</option>
+                                                                <option value="Ukraine">Ukraine</option>
+                                                                <option value="United Arab Erimates">United Arab
+                                                                    Emirates</option>
+                                                                <option value="United States of America">United States
+                                                                    of America</option>
+                                                                <option value="Uraguay">Uruguay</option>
+                                                                <option value="Uzbekistan">Uzbekistan</option>
+                                                                <option value="Vanuatu">Vanuatu</option>
+                                                                <option value="Vatican City State">Vatican City State
+                                                                </option>
+                                                                <option value="Venezuela">Venezuela</option>
+                                                                <option value="Vietnam">Vietnam</option>
+                                                                <option value="Virgin Islands (Brit)">Virgin Islands
+                                                                    (Brit)</option>
+                                                                <option value="Virgin Islands (USA)">Virgin Islands
+                                                                    (USA)</option>
+                                                                <option value="Wake Island">Wake Island</option>
+                                                                <option value="Wallis & Futana Is">Wallis & Futana Is
+                                                                </option>
+                                                                <option value="Yemen">Yemen</option>
+                                                                <option value="Zaire">Zaire</option>
+                                                                <option value="Zambia">Zambia</option>
+                                                                <option value="Zimbabwe">Zimbabwe</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <div class="col-md-6 pe-2 pe-md-3">
+                                                                <div class="form-floating mb-3">
+                                                                    <input type="text" class="form-control"
+                                                                        id="floatingInput" placeholder="Vorname*">
+                                                                    <label for="floatingInput">Vorname*</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 pe-2 pe-md-3">
+                                                                <div class="form-floating mb-3">
+                                                                    <input type="text" class="form-control"
+                                                                        id="floatingInput" placeholder="Nachname*">
+                                                                    <label for="floatingInput">Nachname</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Unternehmensname">
+                                                            <label for="floatingInput">Unternehmensname</label>
+                                                        </div>
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Straße*">
+                                                            <label for="floatingInput">Straße*</label>
+                                                        </div>
+
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Postleitzahl*">
+                                                            <label for="floatingInput">Postleitzahl</label>
+                                                        </div>
+
+
+
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingInput"
+                                                                placeholder="Telefonnummer*">
+                                                            <label for="floatingInput">Telefonnummer</label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 right-sidebar">
+                        <div class="my-account-price theiaStickySidebar">
+                            <div class="fix-form shadow">
+                                <div class="order-detail-inner bg-white border-0 rounded-0 p-4 p-xl-5">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="fw-bold m-0 p-0 fs-6 text-dark">ARTIKEL</h5>
+                                        <h5 class="fw-bold m-0 p-0 fs-6 text-dark">PREIS</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-muted m-0 p-0 fs-08">Aim Yellow Matt PS5 Controller x1</p>
+                                        <p class="text-muted m-0 p-0">114,00€</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 p-0 fw-bold">Zwischensumme</p>
+                                        <p class="text-dark fw-bold m-0 p-0">114,00€</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-muted fw-bold m-0 p-0">Versandkosten</p>
+                                        <p class="text-muted m-0 px-2 fs-08" style="word-break: break-all;">Gebe
+                                            im nächsten Schritt deine Adresse <br>an um die Versandkosten zu sehen</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault7">
+                                            <label class="form-check-label text-muted fw-bold m-0 p-0"
+                                                for="flexRadioDefault7">
+                                                Express Versand (DHL)
+                                            </label>
+                                        </div>
+                                        <p class="text-muted m-0 p-0">30,00€</p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="fw-bolder fs-6 m-0 p-0">Gesamtbetrag</p>
+                                        <p class="text-dark fw-bold fs-6 m-0 p-0">114,00€</p>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="form-check fw-bold pt-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Ich habe die <span><a href="#" data-bs-toggle="modal" data-bs-target="#modal-agb"
+                                                    style="text-decoration: underline; color: red;">AGBs *</a> gelesen
+                                                und akzeptiere sie.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check fw-bold">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexDefault2">
+                                        <label class="form-check-label" for="flexDefault2">
+                                            Für unseren Newsletter anmelden (optional)
+                                        </label>
+                                    </div>
+                                    <div class="pt-4">
+                                        <a href="#"
+                                            class="btn rounded-0 bg-trunc w-100 py-3 text-white text-uppercase fw-bold fs-5"
+                                            data-bs-toggle="modal" data-bs-target="#modal-control"> Next</a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer style="background: #f8f8f8;">
+            <div class="text-center pb-4">
+                <img src="img/log-foot.png" alt="" class="img-fluid">
+            </div>
+            <div class="pb-3 fw-500 dark-blue-text text-center">
+                <a class="m-2" href="versand.html">Versand</a>
+                <a class="m-2" href="agb.html">AGB</a>
+                <a class="m-2" href="wider.html">Widerrufsrecht</a>
+                <a class="m-2" href="datenschutz.html">Datenschutz</a>
+                <a class="m-2" href="impressum.html">Impressum</a>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+    <!-- Modal AGB -->
+    <div class="modal fade" id="modal-agb" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="info-div">
+                        <h2 class="text-dark mb-4">Inhaltsverzeichnis</h2>
+                        <ol>
+                            <li>Geltungsbereich</li>
+                            <li>Vertragsschluss</li>
+                            <li>Widerrufsrecht</li>
+                            <li>Preise und Zahlungsbedingungen</li>
+                            <li>Liefer- und Versandbedingungen</li>
+                            <li>Eigentumsvorbehalt</li>
+                            <li>M&auml;ngelhaftung (Gew&auml;hrleistung)</li>
+                            <li>Einl&ouml;sung von Aktionsgutscheinen</li>
+                            <li>Einl&ouml;sung von Geschenkgutscheinen</li>
+                            <li>Anwendbares Recht</li>
+                            <li>Alternative Streitbeilegung</li>
+                        </ol>
+
+                        <h2>1) Geltungsbereich</h2>
+
+                        <p><b>1.1</b>&nbsp;Diese Allgemeinen Gesch&auml;ftsbedingungen (nachfolgend
+                            &quot;AGB&quot;) des Fatih Uzuner, handelnd unter
+                            &quot;wolfcontrollers&quot; (nachfolgend &quot;Verk&auml;ufer&quot;),
+                            gelten f&uuml;r alle Vertr&auml;ge &uuml;ber die Lieferung von Waren,
+                            die ein Verbraucher oder Unternehmer (nachfolgend &bdquo;Kunde&ldquo;)
+                            mit dem Verk&auml;ufer hinsichtlich der vom Verk&auml;ufer in seinem
+                            Online-Shop dargestellten Waren abschlie&szlig;t. Hiermit wird der
+                            Einbeziehung von eigenen Bedingungen des Kunden widersprochen, es sei
+                            denn, es ist etwas anderes vereinbart.</p>
+
+                        <p><b>1.2</b>&nbsp;F&uuml;r Vertr&auml;ge &uuml;ber die Lieferung von
+                            Gutscheinen gelten diese AGB entsprechend, sofern insoweit nicht
+                            ausdr&uuml;cklich etwas Abweichendes geregelt ist.</p>
+
+                        <p><b>1.3</b>&nbsp;Verbraucher im Sinne dieser AGB ist jede nat&uuml;rliche
+                            Person, die ein Rechtsgesch&auml;ft zu Zwecken abschlie&szlig;t, die
+                            &uuml;berwiegend weder ihrer gewerblichen noch ihrer selbst&auml;ndigen
+                            beruflichen T&auml;tigkeit zugerechnet werden k&ouml;nnen. Unternehmer
+                            im Sinne dieser AGB ist eine nat&uuml;rliche oder juristische Person
+                            oder eine rechtsf&auml;hige Personengesellschaft, die bei Abschluss
+                            eines Rechtsgesch&auml;fts in Aus&uuml;bung ihrer gewerblichen oder
+                            selbst&auml;ndigen beruflichen T&auml;tigkeit handelt.</p>
+
+                        <h2>2) Vertragsschluss</h2>
+
+                        <p><b>2.1</b>&nbsp;Die im Online-Shop des Verk&auml;ufers enthaltenen
+                            Produktbeschreibungen stellen keine verbindlichen Angebote seitens des
+                            Verk&auml;ufers dar, sondern dienen zur Abgabe eines verbindlichen
+                            Angebots durch den Kunden.</p>
+
+                        <p><b>2.2</b>&nbsp;Der Kunde kann das Angebot &uuml;ber das in den
+                            Online-Shop des Verk&auml;ufers integrierte Online-Bestellformular
+                            abgeben. Dabei gibt der Kunde, nachdem er die ausgew&auml;hlten Waren in
+                            den virtuellen Warenkorb gelegt und den elektronischen Bestellprozess
+                            durchlaufen hat, durch Klicken des den Bestellvorgang
+                            abschlie&szlig;enden Buttons ein rechtlich verbindliches Vertragsangebot
+                            in Bezug auf die im Warenkorb enthaltenen Waren ab.</p>
+
+                        <p><b>2.3</b>&nbsp;Der Verk&auml;ufer kann das Angebot des Kunden innerhalb
+                            von f&uuml;nf Tagen annehmen,</p>
+
+                        <ul>
+                            <li>indem er dem Kunden eine schriftliche Auftragsbest&auml;tigung oder
+                                eine Auftragsbest&auml;tigung in Textform (Fax oder E-Mail)
+                                &uuml;bermittelt, wobei insoweit der Zugang der
+                                Auftragsbest&auml;tigung beim Kunden ma&szlig;geblich ist, oder</li>
+                            <li>indem er dem Kunden die bestellte Ware liefert, wobei insoweit der
+                                Zugang der Ware beim Kunden ma&szlig;geblich ist, oder</li>
+                            <li>indem er den Kunden nach Abgabe von dessen Bestellung zur Zahlung
+                                auffordert.</li>
+                        </ul>
+
+                        <p>Liegen mehrere der vorgenannten Alternativen vor, kommt der Vertrag in
+                            dem Zeitpunkt zustande, in dem eine der vorgenannten Alternativen zuerst
+                            eintritt. Die Frist zur Annahme des Angebots beginnt am Tag nach der
+                            Absendung des Angebots durch den Kunden zu laufen und endet mit dem
+                            Ablauf des f&uuml;nften Tages, welcher auf die Absendung des Angebots
+                            folgt. Nimmt der Verk&auml;ufer das Angebot des Kunden innerhalb
+                            vorgenannter Frist nicht an, so gilt dies als Ablehnung des Angebots mit
+                            der Folge, dass der Kunde nicht mehr an seine Willenserkl&auml;rung
+                            gebunden ist.</p>
+
+                        <p><b>2.4</b>&nbsp;Bei Auswahl einer von PayPal angebotenen Zahlungsart
+                            erfolgt die Zahlungsabwicklung &uuml;ber den Zahlungsdienstleister
+                            PayPal (Europe) S.&agrave; r.l. et Cie, S.C.A., 22-24 Boulevard Royal,
+                            L-2449 Luxembourg (im Folgenden: &bdquo;PayPal&ldquo;), unter Geltung
+                            der PayPal-Nutzungsbedingungen, einsehbar unter <a
+                                href="https://www.paypal.com/de/webapps/mpp/ua/useragreement-full"
+                                target="_blank">https://www.paypal.com/de/webapps/mpp/ua/useragreement-full</a>
+                            oder - falls der Kunde nicht &uuml;ber ein PayPal-Konto verf&uuml;gt
+                            &ndash; unter Geltung der Bedingungen f&uuml;r Zahlungen ohne
+                            PayPal-Konto, einsehbar unter <a
+                                href="https://www.paypal.com/de/webapps/mpp/ua/privacywax-full"
+                                target="_blank">https://www.paypal.com/de/webapps/mpp/ua/privacywax-full</a>.
+                            Zahlt der Kunde mittels einer im Online-Bestellvorgang ausw&auml;hlbaren
+                            von PayPal angebotenen Zahlungsart, erkl&auml;rt der Verk&auml;ufer
+                            schon jetzt die Annahme des Angebots des Kunden in dem Zeitpunkt, in dem
+                            der Kunde den den Bestellvorgang abschlie&szlig;enden Button anklickt.
+                        </p>
+
+                        <p><b>2.5</b>&nbsp;Bei der Abgabe eines Angebots &uuml;ber das
+                            Online-Bestellformular des Verk&auml;ufers wird der Vertragstext nach
+                            dem Vertragsschluss vom Verk&auml;ufer gespeichert und dem Kunden nach
+                            Absendung von dessen Bestellung in Textform (z. B. E-Mail, Fax oder
+                            Brief) &uuml;bermittelt. Eine dar&uuml;ber hinausgehende
+                            Zug&auml;nglichmachung des Vertragstextes durch den Verk&auml;ufer
+                            erfolgt nicht. Sofern der Kunde vor Absendung seiner Bestellung ein
+                            Nutzerkonto im Online-Shop des Verk&auml;ufers eingerichtet hat, werden
+                            die Bestelldaten auf der Website des Verk&auml;ufers archiviert und
+                            k&ouml;nnen vom Kunden &uuml;ber dessen passwortgesch&uuml;tztes
+                            Nutzerkonto unter Angabe der entsprechenden Login-Daten kostenlos
+                            abgerufen werden.</p>
+
+                        <p><b>2.6</b>&nbsp;Vor verbindlicher Abgabe der Bestellung &uuml;ber das
+                            Online-Bestellformular des Verk&auml;ufers kann der Kunde m&ouml;gliche
+                            Eingabefehler durch aufmerksames Lesen der auf dem Bildschirm
+                            dargestellten Informationen erkennen. Ein wirksames technisches Mittel
+                            zur besseren Erkennung von Eingabefehlern kann dabei die
+                            Vergr&ouml;&szlig;erungsfunktion des Browsers sein, mit deren Hilfe die
+                            Darstellung auf dem Bildschirm vergr&ouml;&szlig;ert wird. Seine
+                            Eingaben kann der Kunde im Rahmen des elektronischen Bestellprozesses so
+                            lange &uuml;ber die &uuml;blichen Tastatur- und Mausfunktionen
+                            korrigieren, bis er den den Bestellvorgang abschlie&szlig;enden Button
+                            anklickt.</p>
+
+                        <p><b>2.7</b>&nbsp;F&uuml;r den Vertragsschluss stehen die deutsche und die
+                            englische Sprache zur Verf&uuml;gung.</p>
+
+                        <p><b>2.8</b>&nbsp;Die Bestellabwicklung und Kontaktaufnahme finden in der
+                            Regel per E-Mail und automatisierter Bestellabwicklung statt. Der Kunde
+                            hat sicherzustellen, dass die von ihm zur Bestellabwicklung angegebene
+                            E-Mail-Adresse zutreffend ist, so dass unter dieser Adresse die vom
+                            Verk&auml;ufer versandten E-Mails empfangen werden k&ouml;nnen.
+                            Insbesondere hat der Kunde bei dem Einsatz von SPAM-Filtern
+                            sicherzustellen, dass alle vom Verk&auml;ufer oder von diesem mit der
+                            Bestellabwicklung beauftragten Dritten versandten E-Mails zugestellt
+                            werden k&ouml;nnen.</p>
+
+                        <h2>3) Widerrufsrecht</h2>
+
+                        <p><b>3.1</b>&nbsp;Verbrauchern steht grunds&auml;tzlich ein Widerrufsrecht
+                            zu.</p>
+
+                        <p><b>3.2</b>&nbsp;N&auml;here Informationen zum Widerrufsrecht ergeben sich
+                            aus der Widerrufsbelehrung des Verk&auml;ufers.</p>
+
+                        <h2>4) Preise und Zahlungsbedingungen</h2>
+
+                        <p><b>4.1</b>&nbsp;Sofern sich aus der Produktbeschreibung des
+                            Verk&auml;ufers nichts anderes ergibt, handelt es sich bei den
+                            angegebenen Preisen um Gesamtpreise. Umsatzsteuer wird nicht
+                            ausgewiesen, da der Verk&auml;ufer Kleinunternehmer im Sinne des UStG
+                            ist. Gegebenenfalls zus&auml;tzlich anfallende Liefer- und Versandkosten
+                            werden in der jeweiligen Produktbeschreibung gesondert angegeben.</p>
+
+                        <p><b>4.2</b>&nbsp;Bei Lieferungen in L&auml;nder au&szlig;erhalb der
+                            Europ&auml;ischen Union k&ouml;nnen im Einzelfall weitere Kosten
+                            anfallen, die der Verk&auml;ufer nicht zu vertreten hat und die vom
+                            Kunden zu tragen sind. Hierzu z&auml;hlen beispielsweise Kosten f&uuml;r
+                            die Geld&uuml;bermittlung durch Kreditinstitute (z.B.
+                            &Uuml;berweisungsgeb&uuml;hren, Wechselkursgeb&uuml;hren) oder
+                            einfuhrrechtliche Abgaben bzw. Steuern (z.B. Z&ouml;lle). Solche Kosten
+                            k&ouml;nnen in Bezug auf die Geld&uuml;bermittlung auch dann anfallen,
+                            wenn die Lieferung nicht in ein Land au&szlig;erhalb der
+                            Europ&auml;ischen Union erfolgt, der Kunde die Zahlung aber von einem
+                            Land au&szlig;erhalb der Europ&auml;ischen Union aus vornimmt.</p>
+
+                        <p><b>4.3</b>&nbsp;Die Zahlungsm&ouml;glichkeit/en wird/werden dem Kunden im
+                            Online-Shop des Verk&auml;ufers mitgeteilt.</p>
+
+                        <p><b>4.4</b>&nbsp;Ist Vorauskasse per Bank&uuml;berweisung vereinbart, ist
+                            die Zahlung sofort nach Vertragsabschluss f&auml;llig, sofern die
+                            Parteien keinen sp&auml;teren F&auml;lligkeitstermin vereinbart haben.
+                        </p>
+
+                        <p><b>4.5</b>&nbsp;Bei Auswahl der Zahlungsart &bdquo;SOFORT&ldquo; erfolgt
+                            die Zahlungsabwicklung &uuml;ber den Zahlungsdienstleister SOFORT GmbH,
+                            Theresienh&ouml;he 12, 80339 M&uuml;nchen (im Folgenden
+                            &bdquo;SOFORT&ldquo;). Um den Rechnungsbetrag &uuml;ber
+                            &bdquo;SOFORT&ldquo; bezahlen zu k&ouml;nnen, muss der Kunde &uuml;ber
+                            ein f&uuml;r die Teilnahme an &bdquo;SOFORT&ldquo; frei geschaltetes
+                            Online-Banking-Konto verf&uuml;gen, sich beim Zahlungsvorgang
+                            entsprechend legitimieren und die Zahlungsanweisung gegen&uuml;ber
+                            &bdquo;SOFORT&ldquo; best&auml;tigen. Die Zahlungstransaktion wird
+                            unmittelbar danach von &bdquo;SOFORT&ldquo; durchgef&uuml;hrt und das
+                            Bankkonto des Kunden belastet. N&auml;here Informationen zur Zahlungsart
+                            &bdquo;SOFORT&ldquo; kann der Kunde im Internet unter <a
+                                href="https://www.klarna.com/sofort/"
+                                target="_blank">https://www.klarna.com/sofort/</a> abrufen.</p>
+
+                        <p><b>4.6</b>&nbsp;Bei Auswahl einer &uuml;ber den Zahlungsdienst
+                            &quot;Klarna&quot; angebotenen Zahlungsart erfolgt die
+                            Zahlungsabwicklung &uuml;ber die Klarna Bank AB (publ), Sveav&auml;gen
+                            46, 111 34 Stockholm, Schweden (nachfolgend &bdquo;Klarna&ldquo;).
+                            N&auml;here Informationen sowie die Bedingungen von Klarna hierzu finden
+                            sich in den Zahlungsinformationen des Verk&auml;ufers, welche unter der
+                            folgenden Internetadresse einsehbar sind:</p>
+
+                        <p>folgt</p>
+
+                        <h2>5) Liefer- und Versandbedingungen</h2>
+
+                        <p><b>5.1</b>&nbsp;Die Lieferung von Waren erfolgt auf dem Versandweg an die
+                            vom Kunden angegebene Lieferanschrift, sofern nichts anderes vereinbart
+                            ist. Bei der Abwicklung der Transaktion ist die in der Bestellabwicklung
+                            des Verk&auml;ufers angegebene Lieferanschrift ma&szlig;geblich.</p>
+
+                        <p><b>5.2</b>&nbsp;Scheitert die Zustellung der Ware aus Gr&uuml;nden, die
+                            der Kunde zu vertreten hat, tr&auml;gt der Kunde die dem Verk&auml;ufer
+                            hierdurch entstehenden angemessenen Kosten. Dies gilt im Hinblick auf
+                            die Kosten f&uuml;r die Hinsendung nicht, wenn der Kunde sein
+                            Widerrufsrecht wirksam aus&uuml;bt. F&uuml;r die R&uuml;cksendekosten
+                            gilt bei wirksamer Aus&uuml;bung des Widerrufsrechts durch den Kunden
+                            die in der Widerrufsbelehrung des Verk&auml;ufers hierzu getroffene
+                            Regelung.</p>
+
+                        <p><b>5.3</b>&nbsp;Der Verk&auml;ufer beh&auml;lt sich das Recht vor, im
+                            Falle nicht richtiger oder nicht ordnungsgem&auml;&szlig;er
+                            Selbstbelieferung vom Vertrag zur&uuml;ckzutreten. Dies gilt nur
+                            f&uuml;r den Fall, dass die Nichtlieferung nicht vom Verk&auml;ufer zu
+                            vertreten ist und dieser mit der gebotenen Sorgfalt ein konkretes
+                            Deckungsgesch&auml;ft mit dem Zulieferer abgeschlossen hat. Der
+                            Verk&auml;ufer wird alle zumutbaren Anstrengungen unternehmen, um die
+                            Ware zu beschaffen. Im Falle der Nichtverf&uuml;gbarkeit oder der nur
+                            teilweisen Verf&uuml;gbarkeit der Ware wird der Kunde unverz&uuml;glich
+                            informiert und die Gegenleistung unverz&uuml;glich erstattet.</p>
+
+                        <p><b>5.4</b>&nbsp;Selbstabholung ist aus logistischen Gr&uuml;nden nicht
+                            m&ouml;glich.</p>
+
+                        <p><b>5.5</b>&nbsp;Gutscheine werden dem Kunden wie folgt &uuml;berlassen:
+                        </p>
+
+                        <p>- per E-Mail</p>
+
+                        <h2>6) Eigentumsvorbehalt</h2>
+
+                        <p>Tritt der Verk&auml;ufer in Vorleistung, beh&auml;lt er sich bis zur
+                            vollst&auml;ndigen Bezahlung des geschuldeten Kaufpreises das Eigentum
+                            an der gelieferten Ware vor.</p>
+
+                        <h2>7) M&auml;ngelhaftung (Gew&auml;hrleistung)</h2>
+
+                        <p><b>7.1</b>&nbsp;Ist die Kaufsache mangelhaft, gelten die Vorschriften der
+                            gesetzlichen M&auml;ngelhaftung.</p>
+
+                        <p><b>7.2</b>&nbsp;Handelt der Kunde als Verbraucher, so wird er gebeten,
+                            angelieferte Waren mit offensichtlichen Transportsch&auml;den bei dem
+                            Zusteller zu reklamieren und den Verk&auml;ufer hiervon in Kenntnis zu
+                            setzen. Kommt der Kunde dem nicht nach, hat dies keinerlei Auswirkungen
+                            auf seine gesetzlichen oder vertraglichen M&auml;ngelanspr&uuml;che.</p>
+
+                        <h2>8) Einl&ouml;sung von Aktionsgutscheinen</h2>
+
+                        <p><b>8.1</b>&nbsp;Gutscheine, die vom Verk&auml;ufer im Rahmen von
+                            Werbeaktionen mit einer bestimmten G&uuml;ltigkeitsdauer unentgeltlich
+                            ausgegeben werden und die vom Kunden nicht k&auml;uflich erworben werden
+                            k&ouml;nnen (nachfolgend &quot;Aktionsgutscheine&quot;), k&ouml;nnen nur
+                            im Online-Shop des Verk&auml;ufers und nur im angegebenen Zeitraum
+                            eingel&ouml;st werden.</p>
+
+                        <p><b>8.2</b>&nbsp;Einzelne Produkte k&ouml;nnen von der Gutscheinaktion
+                            ausgeschlossen sein, sofern sich eine entsprechende Einschr&auml;nkung
+                            aus dem Inhalt des Aktionsgutscheins ergibt.</p>
+
+                        <p><b>8.3</b>&nbsp;Aktionsgutscheine k&ouml;nnen nur vor Abschluss des
+                            Bestellvorgangs eingel&ouml;st werden. Eine nachtr&auml;gliche
+                            Verrechnung ist nicht m&ouml;glich.</p>
+
+                        <p><b>8.4</b>&nbsp;Pro Bestellung kann immer nur ein Aktionsgutschein
+                            eingel&ouml;st werden.</p>
+
+                        <p><b>8.5</b>&nbsp;Der Warenwert muss mindestens dem Betrag des
+                            Aktionsgutscheins entsprechen. Etwaiges Restguthaben wird vom
+                            Verk&auml;ufer nicht erstattet.</p>
+
+                        <p><b>8.6</b>&nbsp;Reicht der Wert des Aktionsgutscheins zur Deckung der
+                            Bestellung nicht aus, kann zur Begleichung des Differenzbetrages eine
+                            der &uuml;brigen vom Verk&auml;ufer angebotenen Zahlungsarten
+                            gew&auml;hlt werden.</p>
+
+                        <p><b>8.7</b>&nbsp;Das Guthaben eines Aktionsgutscheins wird weder in
+                            Bargeld ausgezahlt noch verzinst.</p>
+
+                        <p><b>8.8</b>&nbsp;Der Aktionsgutschein wird nicht erstattet, wenn der Kunde
+                            die mit dem Aktionsgutschein ganz oder teilweise bezahlte Ware im Rahmen
+                            seines gesetzlichen Widerrufsrechts zur&uuml;ckgibt.</p>
+
+                        <p><b>8.9</b>&nbsp;Der Aktionsgutschein ist &uuml;bertragbar. Der
+                            Verk&auml;ufer kann mit befreiender Wirkung an den jeweiligen Inhaber,
+                            der den Aktionsgutschein im Online-Shop des Verk&auml;ufers
+                            einl&ouml;st, leisten. Dies gilt nicht, wenn der Verk&auml;ufer Kenntnis
+                            oder grob fahrl&auml;ssige Unkenntnis von der Nichtberechtigung, der
+                            Gesch&auml;ftsunf&auml;higkeit oder der fehlenden
+                            Vertretungsberechtigung des jeweiligen Inhabers hat.</p>
+
+                        <h2>9) Einl&ouml;sung von Geschenkgutscheinen</h2>
+
+                        <p><b>9.1</b>&nbsp;Gutscheine, die &uuml;ber den Online-Shop des
+                            Verk&auml;ufers k&auml;uflich erworben werden k&ouml;nnen (nachfolgend
+                            &quot;Geschenkgutscheine&quot;), k&ouml;nnen nur im Online-Shop des
+                            Verk&auml;ufers eingel&ouml;st werden, sofern sich aus dem Gutschein
+                            nichts anderes ergibt.</p>
+
+                        <p><b>9.2</b>&nbsp;Geschenkgutscheine und Restguthaben von
+                            Geschenkgutscheinen sind bis zum Ende des dritten Jahres nach dem Jahr
+                            des Gutscheinkaufs einl&ouml;sbar. Restguthaben werden dem Kunden bis
+                            zum Ablaufdatum gutgeschrieben.</p>
+
+                        <p><b>9.3</b>&nbsp;Geschenkgutscheine k&ouml;nnen nur vor Abschluss des
+                            Bestellvorgangs eingel&ouml;st werden. Eine nachtr&auml;gliche
+                            Verrechnung ist nicht m&ouml;glich.</p>
+
+                        <p><b>9.4</b>&nbsp;Bei einer Bestellung k&ouml;nnen auch mehrere
+                            Geschenkgutscheine eingel&ouml;st werden.</p>
+
+                        <p><b>9.5</b>&nbsp;Geschenkgutscheine k&ouml;nnen nur f&uuml;r den Kauf von
+                            Waren und nicht f&uuml;r den Kauf von weiteren Geschenkgutscheinen
+                            verwendet werden.</p>
+
+                        <p><b>9.6</b>&nbsp;Reicht der Wert des Geschenkgutscheins zur Deckung der
+                            Bestellung nicht aus, kann zur Begleichung des Differenzbetrages eine
+                            der &uuml;brigen vom Verk&auml;ufer angebotenen Zahlungsarten
+                            gew&auml;hlt werden.</p>
+
+                        <p><b>9.7</b>&nbsp;Das Guthaben eines Geschenkgutscheins wird weder in
+                            Bargeld ausgezahlt noch verzinst.</p>
+
+                        <p><b>9.8</b>&nbsp;Der Geschenkgutschein ist &uuml;bertragbar. Der
+                            Verk&auml;ufer kann mit befreiender Wirkung an den jeweiligen Inhaber,
+                            der den Geschenkgutschein im Online-Shop des Verk&auml;ufers
+                            einl&ouml;st, leisten. Dies gilt nicht, wenn der Verk&auml;ufer Kenntnis
+                            oder grob fahrl&auml;ssige Unkenntnis von der Nichtberechtigung, der
+                            Gesch&auml;ftsunf&auml;higkeit oder der fehlenden
+                            Vertretungsberechtigung des jeweiligen Inhabers hat.</p>
+
+                        <h2>10) Anwendbares Recht</h2>
+
+                        <p>F&uuml;r s&auml;mtliche Rechtsbeziehungen der Parteien gilt das Recht der
+                            Bundesrepublik Deutschland unter Ausschluss der Gesetze &uuml;ber den
+                            internationalen Kauf beweglicher Waren. Bei Verbrauchern gilt diese
+                            Rechtswahl nur insoweit, als nicht der gew&auml;hrte Schutz durch
+                            zwingende Bestimmungen des Rechts des Staates, in dem der Verbraucher
+                            seinen gew&ouml;hnlichen Aufenthalt hat, entzogen wird.</p>
+
+                        <h2>11) Alternative Streitbeilegung</h2>
+
+                        <p><b>11.1</b>&nbsp;Die EU-Kommission stellt im Internet unter folgendem
+                            Link eine Plattform zur Online-Streitbeilegung bereit: <a
+                                href="https://ec.europa.eu/consumers/odr"
+                                target="_blank">https://ec.europa.eu/consumers/odr</a></p>
+
+                        <p>Diese Plattform dient als Anlaufstelle zur au&szlig;ergerichtlichen
+                            Beilegung von Streitigkeiten aus Online-Kauf- oder
+                            Dienstleistungsvertr&auml;gen, an denen ein Verbraucher beteiligt ist.
+                        </p>
+
+                        <p><b>11.2</b>&nbsp;Der Verk&auml;ufer ist zur Teilnahme an einem
+                            Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder
+                            verpflichtet noch bereit.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Control -->
+
+    <div class="modal fade" id="modal-control" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark rounded-3">
+                <div class="modal-header bg-dark text-center border-0">
+                    <h6 class="modal-title text-center w-100"><img src="./img/log.png" alt="" width="150" height="auto"></h6>
+                    <button type="button" class="border-0 rounded-pill bg-dark text-white " data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body px-lg-5">     
+                    <div class="shop-two-modal-inner text-center">
+                        <div class="process-select text-center py-3">
+                            <div class="process-select-login mx-2 d-inline-block">
+                                <a href="#" class="process-btn">Giriş Yap</a>
+                            </div>
+                            <div class="process-select-login mx-2 d-inline-block">
+                                <a href="#" class="process-btn2">Üye Ol</a>
+                            </div>
+                        </div>
+
+                        <div class="shop-two-modal-form-login py-4" style="display: none;">
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                              </div>
+                        </div>  
+                        <div class="shop-two-modal-form-signup py-4">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="floatingName" placeholder="name@example.com">
+                                <label for="floatingName">Name</label>
+                              </div>
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="floatingSurName" placeholder="name@example.com">
+                                <label for="floatingSurName">Surname</label>
+                              </div>
+                            <div class="form-floating mb-2">
+                                <input type="tel" class="form-control" id="floatingTel" placeholder="name@example.com">
+                                <label for="floatingTel">Tel</label>
+                              </div>
+                              <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="floatingEmail2" placeholder="Password">
+                                <label for="floatingEmail2">Email address</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">
+                                <label for="floatingPassword2">Password</label>
+                              </div>
+
+                        </div>  
+
+                        <div class="send">
+                            <a href="#" class="btn bg-trunc w-100 text-white py-3 mb-4">SEND <i class="bi bi-chevron-right"></i><i class="bi bi-chevron-right"></i></a>
+                        </div>
+
+
+                    </div>                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/plugin/jquery-3.6.0.min.js"></script>
+    <script src="js/plugin/owl.carousel.min.js"></script>
+    <script src="js/plugin/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin/ResizeSensor.min.js"></script>
+    <script src="js/plugin/theia-sticky-sidebar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(".shop-two-modal-form-signup").hide();
+        $(".shop-two-modal-form-login").show();
+        $(".process-select-login .process-btn2").click(function() {
+            $(".shop-two-modal-form-login").hide(0);
+            $(".shop-two-modal-form-signup").show(200);
+        });
+    
+        $(".process-select-login .process-btn").click(function() {
+            $(".shop-two-modal-form-signup").hide(0);
+            $(".shop-two-modal-form-login").show(200);
+        })
+    </script>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.left-sidebar, .right-sidebar').theiaStickySidebar({
+                additionalMarginTop: 130,
+                minWidth: 991,
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

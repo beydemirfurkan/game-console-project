@@ -1,0 +1,237 @@
+@import 'global';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+// === *** Global *** === 
+
+.elite-title {
+    font-weight: 600;
+    position: relative;
+}
+
+.social-btn {
+    a {
+        i {
+            color: white;
+            padding: .3rem;
+        }
+    }
+}
+
+
+@media(min-width:1366px) {
+    .m-negative {
+        margin-top: -150px;
+    }
+}
+
+
+.series-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+
+    .series-sec-title {
+        transform: rotate(-1.5deg);
+        span {
+            padding: 0!important;
+            margin: 0!important;
+            text-shadow:  2px #ffffff;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 5px;
+
+        }
+
+        h1 {
+            letter-spacing: 5px;
+            padding: 0!important;
+            margin: 0!important;
+            margin-top: -22px!important;
+            font-family: 'Bebas Neue', cursive;
+        }
+    }
+}
+
+// === *** END Global *** ===
+
+// === *** Elite Page 1 *** ===
+
+body.elite-series-page {
+    ul.list-unstyled {
+        li {
+            i {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .text-muted {
+        color: #989695!important;
+    }
+
+    .text-soft-red {
+        color: #fb1747;
+    }
+
+    .bg-soft-red {
+        background: #fb1747;
+    }
+
+    .elite-console-inner {
+        text-align: center;
+        p {
+            font-weight: 500;
+            color: #333131;
+        }
+    }
+
+    
+    @media(min-width:768px) {
+        .elite-title {
+            span {
+                position: absolute;
+                top: -40px;
+            }
+            
+        }
+    }
+
+    .series-sec-p {
+        p {
+            color: #624e4a!important;
+            font-weight: 500;
+        }
+    }
+
+    .series-background {
+        background: url(../img/series/wolf_banner.png);
+        background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		height: 940px;
+    }
+
+    .elite-series-page-sec1 {
+        background: #fb1747;      
+        background-size: cover;     
+        background-position: center center;
+    }
+
+    @media(min-width:1200px) {
+        .elite-series-page-sec1 {
+             background-image: url(../img/series/ng.png);
+             min-height: 250vh;
+        }
+        
+    }   
+
+    @media(min-width:991px) and (max-width:1199px) {
+        .elite-series-page-sec1 {
+            background-image: url(../img/series/ng.png);
+            min-height: 130vh;
+       }
+    }
+
+
+    @media(max-width:991px) {
+        .elite-series-page-sec1 {
+            background-image: url(../img/series/alt.png);
+            min-height: 230vh;
+        }
+    }
+
+    .elite-series-page-sec3 {
+        background: #fb1747;
+    }
+
+    .elite-series-page-sec5 {
+        background: #2c2829; 
+        background-image: url(../img/series/series-footer-bg.png);
+        background-size: cover; 
+        min-height: 160vh; 
+        background-position: center center;
+    }
+}
+
+// === *** END Elite Page 1 *** ===
+
+// === *** Elite Page 2 *** ===
+
+body.elite-series-page2 {
+    background: #151e3f;
+    ul.list-unstyled {
+        li {
+            i {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: #cdd022;
+               }
+        }
+    }
+    .elite-console-inner {
+        text-align: center;
+        p {
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    .series-background2 {
+        background: url(../img/series/banner2a.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 940px; 
+    }
+
+    .elite-series-page-sec5 {
+        background: #2c2829; 
+        background-image: url(../img/series/footer-bg-3.jpg);
+        background-size: cover; 
+        min-height: 220vh; 
+        background-position: center center;
+    }
+
+    .text-dark-yellow {
+        color: #cdd022;
+    }
+
+    
+
+    @media(min-width:1200px) {
+        .elite-series-photo-inner {
+            background: url(../img/series/ng-2.png);
+            min-height: 140vh;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:1199.98px) {
+        .elite-series-photo-inner {
+            background: url(../img/series/middle-bg.jpg);
+            background-size: cover;
+            background-position: center center;
+            min-height: 150vh;
+        }
+    }
+
+
+
+    @media(max-width:767.98px) {
+        .elite-series-photo-inner {
+            background: url(../img/series/middle-bg.jpg);
+            background-size: cover;
+            background-position: center center;
+            min-height: 110vh;
+        }
+    }
+
+
+
+
+}
+ 
+// === *** END Elite Page 2 *** ===
